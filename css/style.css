@@ -71,6 +71,7 @@ btn:visited {
   padding: 1.6rem 3.2rem;
   border-radius: 5px;
   transition: all 0.3s;
+  font-weight: 600;
 }
 
 .btn--full:link,
@@ -99,5 +100,35 @@ btn:visited {
 .margin-right-sm {
   margin-right: 24px !important;
 }
-.hero-text-box {
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 1.6rem;
+}
+
+.derlivered-imgs {
+  display: flex;
+}
+
+.derlivered-imgs img {
+  border-radius: 50%;
+  height: 4.8rem;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.derlivered-imgs img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
 }
