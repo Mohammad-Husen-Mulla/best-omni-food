@@ -14,6 +14,9 @@
    Primary #e67e22
    tint:   #fdf2e9
    shades: #555 #333
+
+3- Border
+   brder-radius: 9px;
 */
 
 * {
@@ -85,6 +88,45 @@ body {
   height: 2.2rem;
 }
 
+/* ************************** */
+/* Navigation */
+/* ************************** */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
 /* ************************** */
 /*  Hero Section */
 /* ************************** */
