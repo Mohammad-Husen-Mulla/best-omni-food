@@ -35,9 +35,9 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-/* ************************** */
+/* ***************************/
 /* Common section */
-/* ************************** */
+/* ***************************/
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -72,9 +72,9 @@ body {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
 }
-/* ************************** */
+/* ***************************/
 /* Header */
-/* ************************** */
+/* ***************************/
 
 .header {
   display: flex;
@@ -88,9 +88,9 @@ body {
   height: 2.2rem;
 }
 
-/* ************************** */
+/* ***************************/
 /* Navigation */
-/* ************************** */
+/* ***************************/
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -127,9 +127,9 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
-/* ************************** */
+/* ***************************/
 /*  Hero Section */
-/* ************************** */
+/* ***************************/
 
 .section-hero {
   background-color: #fdf2e9;
