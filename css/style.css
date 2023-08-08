@@ -213,6 +213,7 @@
 /* ***************************/
 /*  Meals Section */
 /* ***************************/
+
 .section-meals {
   padding: 9.6rem 0;
 }
@@ -247,7 +248,7 @@
 
 .meal:hover {
   cursor: pointer;
-  transform: scale(1.01);
+  transform: translateY(-1%);
 }
 
 .meal-content {
@@ -309,4 +310,31 @@
 .all-recipes {
   font-size: 1.8rem;
   text-align: center;
+}
+
+/* ***************************/
+/*  Testimonials Section */
+/* ***************************/
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #777;
 }
