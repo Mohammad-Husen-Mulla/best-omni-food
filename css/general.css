@@ -52,6 +52,13 @@ strong {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+}
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2--cols {
@@ -59,6 +66,9 @@ strong {
 }
 .grid--3--cols {
   grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .heading-primary,
