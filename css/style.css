@@ -471,3 +471,31 @@
   font-size: 1.8rem;
   line-height: 1.8;
 }
+
+/* ***************************/
+/*  Pricing Section */
+/* ***************************/
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  box-shadow: 0 2.4rem 4.8rem 0 rgba(0, 0, 0, 0.15);
+  height: 400px;
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.cta-text-box {
+}
+.cta-img-box {
+  background-image: linear-gradient(to right bottom, #eb974e4e, #e67d2228),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}

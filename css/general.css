@@ -5,7 +5,9 @@
       10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
     Line Height 
-    Default -1
+    Default -1 1.8 1.6
+
+    shadow -  box-shadow: 0 2.4rem 4.8rem 0 rgba(0, 0, 0, 0.075);
 
     SPACING SYSTEM (px)
       2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
