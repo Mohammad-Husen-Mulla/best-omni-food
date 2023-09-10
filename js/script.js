@@ -4,6 +4,8 @@ const sectionHow = document.getElementById('section-how');
 const maiNavEl = document.querySelector('.main-nav-list');
 const sectionMeals = document.querySelector('.section-meals');
 const allLinks = document.querySelectorAll('a:link');
+const hero = document.querySelector('.section-hero');
+const stepImageBox = document.querySelectorAll('.step-img');
 
 allLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
@@ -24,10 +26,9 @@ allLinks.forEach((link) => {
     if (link.classList.contains('main-nav-link')) {
       headerEl.classList.toggle('nav-open');
     }
-
   })
 
-})
+});
 
 navBtn.addEventListener('click', () => {
   headerEl.classList.toggle('nav-open');
@@ -37,17 +38,34 @@ const fixNav = function (entries, obsever) {
 
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      headerEl.classList.add("fix-nav");
-      console.log(entry);
+      headerEl.classList.remove("fix-nav");
+
     } else {
-      // headerEl.classList.remove("fix-nav");
+      headerEl.classList.add("fix-nav");
     }
   })
 }
 
 const navObserver = new IntersectionObserver(fixNav, {
   root: null,
-  threshold: 0.25,
+  threshold: 0.25
+});
 
+const imageRotation = function (entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('img-rotation');
+    } else {
+      entry.target.classList.remove('img-rotation');
+
+    }
+  })
+}
+
+
+const imageObserver = new IntersectionObserver(imageRotation, {
+  root: null,
+  threshold: 0.75,
 })
-navObserver.observe(sectionHow);
+stepImageBox.forEach(box => imageObserver.observe(box))
+navObserver.observe(hero);
