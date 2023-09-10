@@ -25,6 +25,7 @@
   align-items: center;
 
   justify-content: center;
+  transition: all 1s;
 }
 
 .main-nav-link:link,
@@ -200,9 +201,9 @@
   transition: all 0.9s;
 }
 
-.step-img:hover {
+/* .step-img:hover {
   transform: rotate(360deg) scale(1.2);
-}
+} */
 
 .step-img-box::before {
   width: 60%;

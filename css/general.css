@@ -29,6 +29,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -206,4 +207,11 @@ strong {
   gap: 1.8rem;
   /* height: 100%;
   justify-content: center; */
+}
+
+.fix-nav {
+  position: fixed !important;
+  z-index: 99999;
+  width: 100%;
+  transform: translateX(0%);
 }
