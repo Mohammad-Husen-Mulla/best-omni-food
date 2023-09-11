@@ -198,7 +198,7 @@
 
 .step-img {
   width: 35%;
-  transform: scale(90%);
+  transform: scale(95%);
   transition: all 0.9s;
 }
 
@@ -657,7 +657,7 @@
 
 .img-rotation {
   /* animation: 0.3s ease-in-out 0s rotate; */
-  transform: scale(110%);
+  transform: scale(100%);
 }
 
 /* .img-rotation::before {

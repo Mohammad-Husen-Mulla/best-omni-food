@@ -48,7 +48,7 @@ const fixNav = function (entries, obsever) {
 
 const navObserver = new IntersectionObserver(fixNav, {
   root: null,
-  threshold: 0.25
+  threshold: 0.5
 });
 
 const imageRotation = function (entries, observer) {
