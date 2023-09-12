@@ -39,16 +39,16 @@ const fixNav = function (entries, obsever) {
 
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      headerEl.classList.add("fix-nav");
-    } else {
       headerEl.classList.remove("fix-nav");
+    } else {
+      headerEl.classList.add("fix-nav");
     }
   })
 }
 
 const navObserver = new IntersectionObserver(fixNav, {
   root: null,
-  threshold: 0.25
+  threshold: 0
 });
 
 const imageRotation = function (entries, observer) {
@@ -67,4 +67,4 @@ const imageObserver = new IntersectionObserver(imageRotation, {
   threshold: 0.75,
 })
 stepImageBox.forEach(box => imageObserver.observe(box))
-navObserver.observe(sectionHow);
+navObserver.observe(hero);
