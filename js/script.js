@@ -1,6 +1,7 @@
 const headerEl = document.querySelector('.header');
 const navBtn = document.querySelector('.btn-mobile-nav');
 const sectionHow = document.getElementById('section-how');
+const sectionFeatured = document.querySelector('.section-featured');
 const maiNavEl = document.querySelector('.main-nav-list');
 const sectionMeals = document.querySelector('.section-meals');
 const allLinks = document.querySelectorAll('a:link');
@@ -38,17 +39,16 @@ const fixNav = function (entries, obsever) {
 
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      headerEl.classList.remove("fix-nav");
-
-    } else {
       headerEl.classList.add("fix-nav");
+    } else {
+      headerEl.classList.remove("fix-nav");
     }
   })
 }
 
 const navObserver = new IntersectionObserver(fixNav, {
   root: null,
-  threshold: 0.5
+  threshold: 0.25
 });
 
 const imageRotation = function (entries, observer) {
@@ -57,7 +57,6 @@ const imageRotation = function (entries, observer) {
       entry.target.classList.add('img-rotation');
     } else {
       entry.target.classList.remove('img-rotation');
-
     }
   })
 }
@@ -68,4 +67,4 @@ const imageObserver = new IntersectionObserver(imageRotation, {
   threshold: 0.75,
 })
 stepImageBox.forEach(box => imageObserver.observe(box))
-navObserver.observe(hero);
+navObserver.observe(sectionHow);

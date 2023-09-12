@@ -209,9 +209,12 @@ strong {
   justify-content: center; */
 }
 
-.fix-nav {
+.header.fix-nav {
   position: fixed !important;
   z-index: 99999;
   width: 100%;
-  transform: translateX(0%);
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
