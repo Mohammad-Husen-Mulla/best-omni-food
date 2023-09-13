@@ -61,7 +61,6 @@ const imageRotation = function (entries, observer) {
   })
 }
 
-
 const imageObserver = new IntersectionObserver(imageRotation, {
   root: null,
   threshold: 0.75,
