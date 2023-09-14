@@ -663,12 +663,10 @@
 /* .img-rotation::before {
   background-color: #e77512 !important;
 } */
-
 /* @keyframes rotate {
   0% {
     transform: scale(90%);
   }
-
   100% {
     transform: scale(100%);
   }
